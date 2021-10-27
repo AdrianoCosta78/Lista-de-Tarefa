@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Sobre o Autor</title>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.galeria{
+	margin: 100px auto;
+	width: 900px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+.foto{
+	position: absolute;
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+
+	25%{
+		opacity: 1;
+		transform: scale(1.1,1.1);
+	}
+	
+	50%{
+		opacity:0;
+	}
+}
+
+.foto:nth-child(1){
+	animation-delay: 0s;
+}
+.foto:nth-child(2){
+	animation-delay: 5s;
+}
+.foto:nth-child(3){
+	animation-delay: 10s;
+}
+.foto:nth-child(4){
+	animation-delay: 15s;
+}
+.foto:nth-child(5){
+	animation-delay: 20s;
+}
+.foto:nth-child(6){
+	animation-delay: 25s;
+}
+.foto:nth-child(7){
+	animation-delay: 30s;
+}
+.foto:nth-child(8){
+	animation-delay: 35s;
+}
+
+</style>
+
+
+</head>
+	<nav>
+		<div class="logo">To Do List</div>
+			<ul>
+			
+				<li><a href="autor.jsp">Sobre o Autor</a></li>
+				<li><a href="login.jsp">Login</a></li>
+			</ul>		
+	</nav>
+	<body>
+		<section class="galeria">
+		
+			
+			<img class="foto" src="imagens/f2.jpg"/>
+			<img class="foto" src="imagens/f5.jpg"/>
+			<img class="foto" src="imagens/f7.jpg"/>
+			<img class="foto" src="imagens/f13.jpg"/>
+			<img class="foto" src="imagens/f14.jpg"/>
+			<img class="foto" src="imagens/f15.jpg"/>
+			<img class="foto" src="imagens/f16.png"/>
+			<img class="foto" src="imagens/f17.jpg"/>
+		
+		</section>
+	
+</body>
+
+</html>
